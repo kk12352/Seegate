@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seegate | Clarity Moves Everything</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Seegate Home">
+        <img class="brand-logo" src="assets/seegate-logo.png" alt="Seegate logo">
+        <div>
+          <div class="brand-name">Seegate</div>
+          <div class="brand-sub" data-i18n="brandSub">Clarity Moves Everything</div>
+        </div>
+      </a>
+      <nav>
+        <a href="#home" data-i18n="navHome">首页</a>
+        <a href="#products" data-i18n="navProducts">产品</a>
+        <a href="#about" data-i18n="navAbout">关于</a>
+        <a href="#contact" data-i18n="navContact">联系</a>
+        <div class="lang-switch">
+          <button class="lang-btn active" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">English</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <i class="fa-solid fa-wave-square"></i>
+              <span data-i18n="heroEyebrow">数据、桌面与生活的统一体验</span>
+            </div>
+            <h1 data-i18n="heroTitle">Clarity Moves Everything</h1>
+            <p data-i18n="heroDesc">Seegate 以清晰、稳定和精致的科技语言，打造覆盖存储、办公和智能生活场景的电子产品系列。</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#products" data-i18n="heroBtnPrimary">探索产品</a>
+              <a class="btn btn-secondary" href="#about" data-i18n="heroBtnSecondary">了解品牌</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <h2 data-i18n="productsTitle">精选产品</h2>
+          <p data-i18n="productsDesc">从高速存储到桌面外设，再到智能生活设备，Seegate 用统一的品牌语言连接每一个高频使用场景。</p>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <div class="container about-contact">
+      <section class="panel" id="about">
+        <h2 data-i18n="aboutTitle">关于 Seegate</h2>
+        <p data-i18n="aboutP1">Seegate 是一个面向现代工作与生活方式的科技电子品牌。我们关注产品在真实日常中的可靠性、触感和视觉一致性，让工具更安静地融入空间。</p>
+        <p data-i18n="aboutP2">品牌 logo 由 SG 字母与流动波形构成，代表数据流、海潮和稳定连接。它被应用在每一件产品表面，形成统一而清晰的产品家族识别。</p>
+        <div class="logo-showcase">
+          <img src="assets/seegate-logo.png" alt="Seegate brand logo">
+        </div>
+        <div class="feature-list">
+          <div class="feature-pill" data-i18n="aboutFeature1">统一品牌标识</div>
+          <div class="feature-pill" data-i18n="aboutFeature2">高质感材料</div>
+          <div class="feature-pill" data-i18n="aboutFeature3">多场景生态</div>
+        </div>
+      </section>
+
+      <section class="panel contact-card" id="contact">
+        <h2 data-i18n="contactTitle">联系 Seegate</h2>
+        <p data-i18n="contactDesc">如需商务合作、售后支持或产品咨询，欢迎通过邮箱与社交媒体联系 Seegate 团队。</p>
+        <a class="contact-email" href="mailto:support@seegate.com">
+          <i class="fa-regular fa-envelope"></i>
+          <span>support@seegate.com</span>
+        </a>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p class="service-time" data-i18n="serviceTime">服务时间：周一至周五 09:00 - 18:00</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container" data-i18n="footerText">© 2026 Seegate. Clarity Moves Everything.</div>
+  </footer>
+
+  <script src="product-data.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
